@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .watch-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width:200px;
+            padding:100px;
+            justify-content: space-between;
+        }
+
+        .watch-item {
+            background-color: #f4eeee;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(25% - 40px);
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            b
+    
+        }
+
+        .watch-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .watch-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .watch-author {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .watch-price {
+            font-size: 1.1em;
+            color: #b12704;
+            margin-bottom: 10px;
+        }
+
+        .watch-description {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .watch-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .watch-buttons button {
+            padding: 8px 12px;
+            font-size: 0.9em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .add-to-cart {
+            background-color: #ff9900;
+            color: white;
+        }
+
+        .buy-now {
+            background-color: #0073e6;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .watch-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .watch-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>watch Store</h1>
+    <div class="watch-buttons">
+        <!-- Watch 1 -->
+        <div class="watch-item">
+            <div class="watch-image">
+                <img src="C:\Users\srimu\Downloads\digital 2.jpg" width="200" height="200" alt="watch 1 Cover">
+            </div>
+            <h2 class="digital">Digital watch</h2>
+            <p class="watch-price">$19.99</p>
+            <p class="watch-description">A brief description of the first watch.</p>
+            <div class="watch-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+
+
+        <!-- Watch 2 -->
+        <div class="watch-item">
+            <div class="watch-image">
+                <img src="C:\Users\srimu\Downloads\smart 3.jpeg" width="200" height="200" alt="watch 2 Cover">
+            </div>
+            <h2 class="Digital">Digital watch </h2>
+            <p class="watch-price">$45.3</p>
+            <p class="watch-description">A brief description of the second watch.</p>
+            <div class="watch-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- Watch 3 -->
+        <div class="watch-item">
+            <div class="watch-image">
+                <img src="C:\Users\srimu\Downloads\analog 1.jpg" width="200" height="200" alt="watch 3 Cover">
+            </div>
+            <h2 class="Analog">Analog watch </h2>
+            <p class="watch-price">$9.99</p>
+            <p class="watch-description">A brief description of the third watch.</p>
+            <div class="watch-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- Watch 4 -->
+        <div class="watch-item">
+            <div class="watch-image">
+                <img src="C:\Users\srimu\Downloads\analog 2.jpeg" width="200" height="200" alt="watch 4 Cover">
+            </div>
+            <h2 class="Analog">Analog watch </h2>
+            <p class="watch-price">$18</p>
+            <p class="watch-description">A brief description of the fourth watch.</p>
+            <div class="watch-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+
+       <!-- Watch 5 -->
+       <div class="watch-item">
+        <div class="watch-image">
+            <img src="C:\Users\srimu\Downloads\analog 3.jpeg" width="200" height="200"  alt="watch 5 Cover">
+        </div>
+        <h2 class="Analog">Analog watch </h2>
+        <p class="watch-price">$25</p>
+        <p class="watch-description">A brief description of the fifth watch.</p>
+        <div class="watch-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+
+        <!-- Watch 6-->
+        <div class="watch-item">
+            <div class="watch-image">
+                <img src="C:\Users\srimu\Downloads\wall clock 1.jpg" width="200" height="200"  alt="watch 6 Cover">
+            </div>
+            <h2 class="Wall clock">wall watch</h2>
+            <p class="watch-price">$5</p>
+            <p class="watch-description">A brief description of the sixth watch.</p>
+            <div class="watch-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- Watch 7 -->
+        <div class="watch-item">
+            <div class="watch-image">
+                <img src="C:\Users\srimu\Downloads\wall clock 2.jpg" width="200" height="200" alt="watch 7 Cover">
+            </div>
+            <h2 class="Wall clock">wall watch </h2>
+            <p class="watch-price">$17</p>
+            <p class="watch-description">A brief description of the seventh watch.</p>
+            <div class="watch-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+
+       <!-- Watch 8-->
+       <div class="watch-item">
+        <div class="watch-image">
+            <img src="C:\Users\srimu\Downloads\kids watch 1.jpeg" width="200" height="200" alt="watch 8 Cover">
+        </div>
+        <h2 class="Kids watch">kids watch </h2>
+        <p class="watch-price">$7</p>
+        <p class="watch-description">A brief description of the  eigth watch.</p>
+        <div class="watch-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <!-- Watch 9-->
+    <div class="watch-item">
+        <div class="watch-image">
+            <img src="C:\Users\srimu\Downloads\kids watch 2.jpg" width="200" height="200" alt="watch 9 Cover">
+        </div>
+        <h2 class="Kids watch">kids watch</h2>
+        <p class="watch-price">$33</p>
+        <p class="watch-description">A brief description of the ninth watch.</p>
+        <div class="watch-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+
+
